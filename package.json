@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+  "build:css": "postcss ./src/styles/main.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/tailwindcss/dist/tailwind.css -o ./public/assets/styles.css && postcss ./public/assets/styles.css --use cssnano -o ./public/assets/styles.min.css"
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "three": "^0.166.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
+    "postcss-cli": "^11.0.0"
+  }
+}
