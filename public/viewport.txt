@@ -1,0 +1,29 @@
+Desktop: Typically, desktop screens range from 1024px and up. Common sizes include 1280px, 1366px, 1440px, 1920px, etc.
+
+
+Tablet: The common tablet sizes range from 768px to 1024px.
+
+
+Mobile: Mobile screens usually range from 320px to 768px.
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) { ... }
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) { ... }
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+
+Container Widths
+Full-width containers: Use 100% width for full-width containers.
+Fixed-width containers: Commonly used widths include 1200px, 960px, 720px, etc., with margins for centering.
+Fluid-width containers: Use percentage-based widths like width: 90% to make containers responsive.
+
+adding and Margin
+Padding: Ensure sufficient padding inside elements to avoid content being too close to borders. Common values range from 10px to 20px.
+Margin: Use margins to create space between elements. Common values range from 10px to 30px.
