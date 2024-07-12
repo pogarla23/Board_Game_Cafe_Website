@@ -1,0 +1,293 @@
+:root {
+    --white: #fff;
+    --light-grey: #f5f6f7;
+    --dark-grey: #0a0a23;
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+}
+
+
+body{
+    color:black;
+    font-family: 'Roboto+Slab' , "sans-serif";
+    background-image: url('../../public/assets/images/insta_pic1.jpg');
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background-color: #ccc; /* Placeholder background color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+ 
+.Title {
+  font-size: 300px;
+  background-color: var(--background-color); /* Light beige background */
+  margin-bottom: 100px;
+  margin-top:-30px;
+  width: 100%;
+  text-align: center;
+  color: var(--text-color); /* Black text */
+  font-weight: 600;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(12, 75, 12, 0.8);;
+    height: fit-content;
+}
+
+div{
+    padding: 10px;
+}
+
+
+#menu{
+    width: 100%;
+    padding-left: 1rem; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+
+
+
+
+#menu-selection{
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.main-menu-desc{
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+    font-family: 'Roboto+Slab';
+
+}
+
+/* CSS */
+.menu-btn {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto+Slab' , "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  
+}
+
+.header {
+  background-color: #F5F5DC;
+  color: black;
+  font-weight: bold;
+}
+
+.logo {
+  height: 120px; /* Adjust as needed */
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links div {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF8C00; /* Change color on hover */
+}
+
+
+.menu-btn:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #FF8C00;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  opacity: 0.3;
+}
+
+#card-title{
+  font-family: 'Roboto+Slab' , "sans-serif";
+  font-weight: 100;
+}
+
+.menu-btn:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  opacity: 0.3;
+}
+
+.menu-btn:after {
+  background-color: #FF8C00;
+  opacity: 0.3;
+}
+
+.menu-btn span {
+  z-index: 1;
+  position: relative;
+}
+#card{
+  border-width: 2px;
+}
+
+
+
+.menu-btn{
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto+Slab' , "sans-serif";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .menu-btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .menu-btn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+  
+  #menu-list {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+      gap: 10px; /* Gap between grid items */
+      padding: 20px; /* Increased padding for more space */
+      
+      transform: perspective(10em); /* Adjust perspective value as needed */
+      box-shadow:
+        rgba(22, 31, 39, 0.5) 0 0 20px, /* Darker shadow with increased blur */
+        rgba(19, 26, 32, 0.2) 0 0 10px; /* Lighter shadow with increased blur */
+      border-radius: 10px;
+      border: 1px solid;
+      border-color:
+        rgb(213, 220, 226)
+        rgb(213, 220, 226)
+        rgb(184, 194, 204);
+       
+    }
+    
+  /* Optional: Hover effect to make the cards stand out more */
+  .card {
+    transition: transform 0.3s ease;
+    text-align: center;
+    font-family: 'Roboto+Slab' , "sans-serif";
+    font-weight: 500;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale up on hover for a subtle zoom effect */
+  }
+
+.price-text{
+    display: flex;
+    justify-content: center;
+}
+
+.container-text {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+    .menu-selection{
+        grid-template-columns: repeat(3, 2fr);
+        align-items: center;
+    }
+    
+}
+
+@media (min-width: 250px) {
+    .container {
+        max-width: 790px;
+    }#menu-list{
+      justify-self: start;content: center;
+      
+    }
+}
+@media (max-width: 450px){
+    #menu-list{
+      justify-self: start;content: center;
+      grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sip & Play Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS animation for fade-in effect */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Apply fade-in animation to all elements */
+        body * {
+            animation: fade-in 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Incorporate Header -->
+    <main>
+       <!-- <header>insert header</header>-->
+
+       <header class="header" style="width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <img class="logo" src="../../public/assets/images/sipnplay.png" alt="Sip and Play Logo" style="height: 100px;">
+        <nav class="nav-links" style="display: flex; gap: 20px;">
+            <div><a href="landing.html">Home</a></div>
+            <div><a href="calendar.html">Events</a></div>
+            <div><a href="landing.html">Contact</a></div>
+            <div><a href="landing.html">Profile</a></div>
+        </nav>
+    </header>
+
+        <div class="Title" style="font-size: 60px;
+            padding:40px;
+            background-color: #F5F5DC;
+            margin-bottom: 80px;
+            width: 100%;
+            text-align: center;
+            color: #000;">MENU</div>
+        <div class="d-grid gap-2 d-md-flex menu-selection">
+            <button type="button" class="menu-btn" data-category="coffee">COFFEE</button>
+            <button type="button" class="menu-btn" data-category="boba">BOBA</button>
+            <button type="button" class="menu-btn" data-category="specialty">SPECIALTY DRINKS</button>
+            <button type="button" class="menu-btn" data-category="hotbites">HOT BITES</button>
+            <button type="button" class="menu-btn" data-category="sandwiches-salads">SANDWICHES & SALADS</button>
+            <button type="button" class="menu-btn" data-category="seasonal">SEASONAL</button>
+            <!--<button type="button" class="menu-btn btn btn-outline-success" data-category="beer-wine">BEER & WINE</button> -->
+        </div> 
+
+        <div class="menu" style="width: 100%;">
+            <div class="main-menu-desc">
+                <div id="main-desc">
+                    <h3 id="main-text"></h3>
+                    <h5 id="main-text-desc"></h5>
+                </div>
+                <div class="container-3D"></div>
+            </div>
+        
+            <div class="container" style="padding-left: 15px;">
+                <div id="menu-list" style="display: grid; align-items:center">
+                    <div class="card">
+                        <span>---------------- Select to See Menu -----------------</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/examples/js/renderers/WebGLRenderer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/examples/js/controls/TrackballControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    
+
+
+
+
+</body>
+</html>
