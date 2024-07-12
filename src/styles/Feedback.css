@@ -1,0 +1,224 @@
+/*header section*/
+header {
+  align-items: center; /*Center the contents vertically*/
+  background-color: #f5f5dc;
+  display: flex;
+  height: 150px;
+  justify-content: center; /*Center the contents horizontally */
+  padding: 20px;
+  text-align: center;
+}
+
+header a {
+  color: #ff8c00;
+  margin-top: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header .logo {
+  margin-right: 20px;
+  max-width: 300px;
+  height: auto;
+}
+
+/*SEARCH*/
+.search-form {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center; /*Center the search form horizontally*/
+}
+
+.search-form input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.search-form button {
+  background-color: #ff8c00;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px; /*Space between input and button*/
+  margin-right: 15px;
+  padding: 8px 12px;
+}
+
+.search-form button:hover {
+  background-color: #ff7500;
+}
+
+/*Navigation*/
+nav {
+  margin-left: auto;
+  flex: 1;
+}
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav li:last-child {
+  margin-right: 0; /*Remove the margin for the last item */
+}
+
+/*for every heading*/
+.form-section h1 {
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+/*styling the form section*/
+
+.form-section {
+  font-size: 30px;
+  background-color: #7eb87e;
+  padding-left: 20px;
+}
+
+.form-section input[type="text"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f5f5dc;
+}
+
+.form-section input[type="email"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f5f5dc;
+}
+
+.form-section input[type="date"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f5f5dc;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #f5f5dc;
+  resize: none;
+}
+
+.opinion {
+  font-size: 30px;
+  background-color: #7eb87e;
+  padding-left: 20px;
+}
+
+/*styling the button*/
+.button {
+  --bg: #ff8c00;
+  --hover-bg: #000;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--bg);
+  box-shadow: 0.25rem 0.25rem var(--hover-bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+/*footer section*/
+.footer-section {
+  background-color: #f5f5dc;
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.footer-left img {
+  width: 350px;
+  height: 300px;
+}
+
+/*styling the link element*/
+.footer-right a {
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.footer-right a {
+  height: 35px;
+  width: auto;
+  min-width: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.footer-right a {
+  position: relative;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #f7a540;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.footer-right a::after {
+  content: "";
+  position: absolute;
+  background-color: #116611;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.footer-right a:hover {
+  color: #e98203;
+}
+
+.footer-right a:hover:after {
+  width: 100%;
+}
+.footer-right ul {
+  list-style: none;
+}
+
+/* styling the input tags*/

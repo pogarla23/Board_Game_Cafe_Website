@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-  "build:css": "postcss ./src/styles/main.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/tailwindcss/dist/tailwind.css -o ./public/assets/styles.css && postcss ./public/assets/styles.css --use cssnano -o ./public/assets/styles.min.css"
-},
-
+    "build:css": "postcss ./src/styles/main.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/tailwindcss/dist/tailwind.css -o ./public/assets/styles.css && postcss ./public/assets/styles.css --use cssnano -o ./public/assets/styles.min.css"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
