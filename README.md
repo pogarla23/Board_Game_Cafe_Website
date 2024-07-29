@@ -37,4 +37,6 @@ Copy code
 For any questions or feedback, please reach out via the contact section on the website.
 
 # Enjoy your visit to Sip and Play!
-https://www.figma.com/design/auyhEoaPd9zQ1v9hIKtQsf/main-page?node-id=0-1&t=YoVr7sfWRni7IIxs-0
+https://pogarla23.github.io/Board_Game_Cafe_Website/
+
+Figma Design: https://www.figma.com/design/auyhEoaPd9zQ1v9hIKtQsf/main-page?node-id=0-1&t=YoVr7sfWRni7IIxs-0
