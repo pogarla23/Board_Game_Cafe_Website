@@ -6,45 +6,45 @@
     <title>Sip and Play</title>
     <link rel="stylesheet" href="../styles/mains.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header class="fade-in">
+    <header class="fade-in header">
         <img class="logo" src="../../public/assets/images/sipnplay.png" alt="Sip and Play Logo">
 
-        <nav>
+        <nav class="header-selection">
             <ul>
-                <li><a href="land.html">Home</a></li>
+                <li><a href="landing.html">Home</a></li>
                 <li><a href="Menu.html">Menu</a></li>
-                <li><a href="calender.html">Events</a></li>
+                <li><a href="calendar.html">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="land.html">Profile</a></li>
             </ul>
         </nav>
 
-        <form class="search-form">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
+       
 
     </header>
 
     <div class="background fade-in">
         <section class="Discover">
             <div class="Discover-content">
-                <h2 style="text-decoration: underline; text-decoration-color: white;">Discover the Ultimate Board Game Experience</h2>
+                
+                <h2 class="the-content" style="color: #ff8c00e6">Discover the Ultimate Board Game <br><h2 class="experience" style="opacity: 0.3;">Experience</h2></h2>
             </div>
         </section>
     
         <section class="Story">
             <div class="left">
-                <h1 style="text-decoration: underline; text-decoration-color: #F5F5DC;">Our Story</h1>
+                <h2 class="fontstyle" style="font-size:40px;">Our Story</h2>
+                <hr width="50%" size="4" color="#000000" />
             </div>
     
             <div class="right">
-                <p class="description" style="text-decoration: underline; text-decoration-color: #F5F5DC; font-family: 'Roboto Slab', serif;">
-                    Founder, Jonathan Li, shares a passion for board games, boba, and delicious food,<br> so he
+                <p class="description" >
+                    Founder, Jonathan Li, shares a passion for <br> <strong> Board Games, Boba, </strong>and <strong>Delicious Food</strong>.<br><br> He
                     combined them all to become Sip & Play, Park Slope's first board game cafe.<br> It is a
                     straightforward concept, come in with your friends and family to play any board game from our
                     library of 300+ games! <br>We hope when you visit, you also enjoy our coffee, espresso, boba,
@@ -55,8 +55,8 @@
     
         <section class="Menu">
             <div class="Menu-content">
-                <button class="Menu-button">check out our menu</button>
-                <p style="text-decoration: underline; text-decoration-color: white; font-family: 'Roboto Slab', serif;">
+                <button class="Menu-button button"><strong><a href = Menu.html> Our Menu</a> </strong></button>
+                <p >
                     Make sure not to miss out on our diverse menu offerings, where you can find a wide range of 
                     everyone's favorite snacks and drinks to satisfy your cravings while you are playing our board games.
                 </p>
@@ -66,9 +66,9 @@
 
     <div>
         <section class="boardgame_section">
-            <h2 class="fontstyle">Our game collection</h2>
+            <h2 class="fontstyle">Our Game Collection</h2>
             <hr width="50%" size="4" color="#000000" />
-            <p style="font-family: 'Roboto Slab', serif;">
+            <p >
               We have an incredible selection of over 300+ board games at our cafe!
               Come by to enjoy your favorite drinks and snacks while having an amazing
               time with your friends and family. It's a perfect place to relax, have
@@ -125,7 +125,7 @@
             <article class="event-section-right">
                 <h2 class="fontstyle">Upcoming Events</h2>
                 <hr width="50%" size="4" color="#000000" />
-                <p style="font-family: 'Roboto Slab', serif;">
+                <p >
                 Be sure not to miss out on our upcoming events at the cafe, where
                 you'll have the opportunity to socialize and connect with new friends
                 while creating wonderful memories with your loved ones. You can look
@@ -133,7 +133,7 @@
                 enjoyable atmosphere.
                 </p>
         
-                <a href="events.html">See Event Details</a>
+                <button class="button" type="button"><a href="events.html">See Event Details</a></button>
             </article>
         </section>
     
@@ -142,15 +142,12 @@
             <article class="reserve-left">
                 <h2 class="fontstyle">Reservations</h2>
                 <hr width="50%" size="4" color="#000000" />
-                <p style="font-family: 'Roboto Slab', serif;">
+                <p >
                     We have just started using a new reservation software, Tock!
                     Reservations are $15 per person for 3 hours of game time. All
                     reservations can be made on our new site:
                 </p>
-                <a href="https://www.exploretock.com/sipnplay">Make your reservations here!</a><br /><br />
-        
-                <button id="my-button" type="button">
-                Reserve Now!
+                <button class="button" type="button"><a href="https://www.exploretock.com/sipnplay">Make your reservations here!</a>
                 </button>
             </article>
             <div class="reserve-right">
@@ -163,14 +160,13 @@
         <hr width="50%" size="4" color="#000000" />
         <section class="contact-us">
             <div class="contact-left">
-                <p style="font-family: 'Roboto Slab', serif;">
-                Feel free to contact us anytime. We will get back to you as soon as we
-                can.
+                <p>
+                Want to see more? <br> Feel free to contact us anytime!
                 </p>
                 <form>
                 <input type="text" placeholder="Name" name="n1" /><br />
                 <input type="Email" placeholder="Email" name="e1" /><br />
-                <textarea placeholder="Message"></textarea><br />
+                <textarea placeholder="Message"></textarea><br/>
                 <button class="button" type="button">Submit</button>
                 </form>
             </div>
@@ -186,17 +182,18 @@
     
         <!--Footer section-->
     
-        <hr width="100%" size="3" color="#000000" />
+        <hr width="100%" />
         <footer class="footer-section">
             <div class="footer-left">
                 <img
                 src="../../public/assets/images/sip&play.webp"
-                alt="An image of a logo"/>
+                alt="An image of a logo"
+                />
             </div>
             <nav class="footer-right">
                 <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="calender.html">Events</a></li>
+                <li><a href="calendar.html">Events</a></li>
                 <li><a href="Menu.html">Menu</a></li>
                 <li><a href="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit?gid=0#gid=0">Games</a></li>
                 <li><a href="Feedback.html">Feedback</a></li>
@@ -204,5 +201,12 @@
             </nav>
         </footer>
     </div>
+
+    <script>
+        // Scroll to the top of the page on page load
+        window.addEventListener('load', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
 </body>
 </html>

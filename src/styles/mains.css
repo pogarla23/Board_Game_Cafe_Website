@@ -17,18 +17,33 @@ html{
 
 body {
     
-    font-family:  'Roboto+Slab';
+    
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     text-align: center;
+    align-items: center;
+    color: #000;
+    
+    
+}
+div{
+  text-align: center;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h2{
+  font-family: 'Bungee Inline', sans-serif;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #000; 
-    font-family: 'Roboto+Slab';
+    
+   
     font-weight: bold; 
 }
 
@@ -42,21 +57,31 @@ h2 {
 
 p{
     color: #000; 
-    font-family:'Roboto+Slab';
+    font-size: 100%;
     font-weight: 600;
 
 }
 
 /* HEADER */
 header {
-    align-items: center; /* Center the contents vertically */
-    background-color: beige;
+     /* Center the contents vertically */
+    background-color: rgb(221, 240, 199);
     display: flex;
     height: 150px;
     justify-content: center; /* Center the contents horizontally */
-    padding: 20px;
-    text-align: center;
+    padding-bottom: 10px;
+   
+    font-weight: 500;
+    font-size: 120%;
+    align-items:center;
 }
+
+.header-selection{
+  margin-left: 20%;
+  font-family: 'Bungee Inline', 'serif';
+}
+
+
 
 header a {
     color: #FF8C00;
@@ -71,8 +96,10 @@ header a:hover{
 
 header .logo{
     margin-right:20px;
-    max-width:300px;
+    max-width:200px;
     height:auto;
+    font-weight: 500;
+    
 }
 
 /*SEARCH*/
@@ -84,31 +111,33 @@ header .logo{
 }
 
 .description {
-  font-family: 'Roboto Slab', serif;
-  font-size: 20px; /* Default font size */
+ 
+  font-size:35px; /* Default font size */
+  align-items: center;
+ 
 }
 
 @media (max-width: 1523px) {
   .description {
-      font-size: 18px; /* Adjust font size for smaller screens */
+      font-size: 35px; /* Adjust font size for smaller screens */
   }
 }
 
 @media (max-width: 1200px) {
   .description {
-      font-size: 16px; /* Further adjust font size for smaller screens */
+      font-size: 30px; /* Further adjust font size for smaller screens */
   }
 }
 
 @media (max-width: 992px) {
   .description {
-      font-size: 14px; /* Adjust font size for tablets and smaller devices */
+      font-size: 25px; /* Adjust font size for tablets and smaller devices */
   }
 }
 
 @media (max-width: 768px) {
   .description {
-      font-size: 12px; /* Adjust font size for mobile devices */
+      font-size: 20px; /* Adjust font size for mobile devices */
   }
 }
 .search-form input {
@@ -118,7 +147,7 @@ header .logo{
 }
 
 .search-form button {
-    background-color: #FF8C00;
+    background-color: #ff8c00dd;
     border-radius: 4px;
     border: none;
     color: white;
@@ -155,88 +184,134 @@ nav li:last-child {
 
 /* BACKGROUND*/
 .background{
-    background-image: url("/Board_Game_Cafe_Website/public/assets/images/background.jpg");
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("/Board_Game_Cafe_Website/public/assets/images/background.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
 }
     
 /* DISCOVER*/
 .Discover {
-    background-color: white;
-    border: 2px solid white;
+    
+    background-image: url('../../public/assets/images/boardgame1.webp');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+   
     border-radius: 10px;
-    height:150px;
-    opacity:0.6;
-    padding: 40px 20px;
-    text-align: center;
+    height:500px;
+    padding: 30px 10px;
+  
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+   
 }
 
 .Discover .Discover-content {
     max-width: 800px;
-    margin: 0 auto;
-}
-
-.Discover p {
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-/* STORY*/
-.Story {
+    padding-top: 200px;
+    color: rgb(0, 0, 0);
     align-items: center;
-    background-color:#F5F5DC;
-    border: 2px solid black; 
-    border-radius: 10px;
-    display: flex;
-    padding: 40px 20px;
-    gap: 50px; 
-    height:250px;
-    justify-content: space-between; /* Align items to the start */
-    opacity:0.7;
-}
-
-.left {
-    flex: 0 0 auto; /* Adjusts the flex-grow, flex-shrink, and flex-basis properties */
-    text-align: left;
-}
-
-.right {
-    flex: 1;
-    text-align: left;
-}
-
-
-/* MENU */
-.Menu {
-    background-color: white;
-    border: 2px solid greenyellow; 
-    border-radius: 10px;
-    height:200px;
-    opacity:0.6;
-    padding: 40px 20px;
     text-align: center;
-}
-
-.Menu .Menu-content {
-    max-width: 800px;
-    margin: 0 auto;
+   
     
 }
 
+.Discover h2 {
+    font-size: 90px;
+    text-decoration: none;
+    opacity:1;
+  
+}
+a{
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; 
+    align-items: center;
+}
+/* STORY*/
+.Story {
+    align-items: center;
+    background-color:rgb(221, 240, 199);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: grid;
+    height: fit-content;
+    width: 100%;
+    font-size: 100px;
+    justify-content: space-between; /* Align items to the start */
+}
+
+.left {
+    /* Adjusts the flex-grow, flex-shrink, and flex-basis properties */
+   
+    margin-left:500px;
+    
+   
+}
+
+.right {
+    
+    font-size: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    
+}
+/* MENU */
+.Menu {
+  border-radius: 10px;
+  height: 200px;
+  padding: 40px 20px;
+  margin: 10%;
+  margin-bottom: 10%;
+}
+
+.Menu .Menu-content {
+  position: relative; /* Ensure overlay is positioned correctly */
+  background-image: url('../../public/assets/images/checkered.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Ensure the overlay does not overflow */
+}
+
+.Menu .Menu-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+  z-index: 1; /* Ensure it is above the background but below text */
+}
+
+.Menu .Menu-content > * {
+  position: relative; /* Ensure children are above the overlay */
+  z-index: 2;
+}
+
 .Menu-button {
-    background-color: transparent;
-    border: none;
-    color: #FF8C00; 
-    cursor: pointer; 
-    font: inherit; 
-    padding: 0;
-    text-decoration: underline; 
+  background-color: #ff8c00e6;
+  border: none;
+  color: rgb(255, 247, 247);
+  cursor: pointer;
+  font: inherit;
+  padding: 2% 5%;
+  border-radius: 10px;
+  font-family: 'Bungee Inline', sans-serif;
 }
 
 /*Button Hover Effect*/ 
 button {
+   font-family: 'Bungee Inline', sans-serif;
     transition: background-color 0.3s, transform 0.3s;
+   
 }
 
 button:hover {
@@ -261,9 +336,9 @@ button:hover {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #000;
+    
     border-radius: 5px;
-    background-color: #f5f5dc;
+    background-color: rgb(221, 240, 199);
   }
   
   textarea {
@@ -271,9 +346,9 @@ button:hover {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #000;
+   
     border-radius: 5px;
-    background-color: #f5f5dc;
+    background-color:rgb(221, 240, 199);
     resize: none;
   }
   
@@ -281,9 +356,9 @@ button:hover {
     width: 550px;
     height: 350px;
   
-    border: 4px solid #ff8c00;
+    border: 1px solid #ff8c00;
     border-radius: 5px;
-    background-color: #f5f5dc;
+    
     margin: 20px 25px 20px;
     padding: 20px 10px 10px;
     font-size: 30px;
@@ -308,7 +383,7 @@ button:hover {
     .Story {
         flex-direction: row;
         justify-content: space-between;
-        text-align: left;
+       
     }
 
     .left, .right {
@@ -316,9 +391,8 @@ button:hover {
         margin: 0 10px;
     }
 
-    .right {
-        text-align: left;
-    }
+    
+    
 }
 
 @media (min-width: 1024px) {
@@ -331,13 +405,15 @@ button:hover {
     }
 
     .Discover, .Story, .Menu {
-        padding: 40px;
+        padding-top: 10px;
+        
     }
 }
 
 /*HALF SECTION*/
 .boardgame_section {
-    background-color: #f5f5dc;
+    background-color: rgb(221, 240, 199, 0.67);
+    padding-top: 3%;
   }
   
   p {
@@ -403,7 +479,7 @@ button:hover {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
     padding-top: 20px;
-    background-color: #f5f5dc;
+    background-color: rgb(221, 240, 199, 0.67);
   }
   
   .reserve-left {
@@ -432,8 +508,6 @@ button:hover {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 2px;
   }
   
   /*The contact us section*/
@@ -455,7 +529,7 @@ button:hover {
     box-sizing: border-box;
     border: 2px solid #000;
     border-radius: 5px;
-    background-color: #f5f5dc;
+    background-color: rgb(221, 240, 199, 0.67);
   }
   
   textarea {
@@ -465,7 +539,7 @@ button:hover {
     box-sizing: border-box;
     border: 2px solid #000;
     border-radius: 5px;
-    background-color: #f5f5dc;
+    background-color: rgb(221, 240, 199, 0.67);
     resize: none;
   }
   
@@ -475,7 +549,7 @@ button:hover {
   
     border: 4px solid #ff8c00;
     border-radius: 5px;
-    background-color: #f5f5dc;
+    background-color: rgb(221, 240, 199, 0.67);
     margin: 20px 25px 20px;
     padding: 20px 10px 10px;
     font-size: 30px;
@@ -484,16 +558,20 @@ button:hover {
   /*styling the buttons*/
   .button {
     --bg: #ff8c00;
-    --hover-bg: #000;
-    --hover-text: #000;
-    color: #fff;
+    --hover-bg: #ffffff;
+    --hover-text: #ffffff;
+    color: #ffffff;
     cursor: pointer;
     border: 1px solid var(--bg);
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 0.8em 2em;
     background: var(--bg);
     transition: 0.2s;
-    margin: 40px;
+    margin:10px;
+    padding: 2% 8%;
+    font-size: larger;
+    text-align: center;
+    
   }
   
   .button:hover {
@@ -511,13 +589,13 @@ button:hover {
   /*footer section*/
   .footer-section {
     display: flex;
-    padding: 20px 10px;
     align-items: center;
+    background-color: rgb(221, 240, 199, 0.67);
   }
   
   .footer-left img {
-    width: 350px;
-    height: 300px;
+    width: fit-content;
+    height: 150px;
   }
   
   /*styling the link element*/
@@ -539,7 +617,7 @@ button:hover {
   .footer-right a {
     position: relative;
     text-decoration: none;
-    font-family: sans-serif;
+   
     color: #f7a540;
     letter-spacing: 0.5px;
     padding: 0 10px;
